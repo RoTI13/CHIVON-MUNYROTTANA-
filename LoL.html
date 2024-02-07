@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do you love me?</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: pink;
+        }
+        .wrapper{
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        h2{
+            font-size: 40px;
+            color: rgb(29, 51, 175);
+            margin: 15px;
+        }
+        .btn-ground{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            position: absolute;
+            width: 100px;
+            height: inherit;
+            font-size: 30px;
+            background-color: rgb(172, 199, 21);
+            border-radius: 15px;
+            border-color: magenta;
+            outline: none;
+        }
+        button:nth-child(1){
+            margin-left: 100px;
+            background-color: rgb(81, 36, 133);
+            color: sandybrown;
+        }
+        button:nth-child(2){
+            margin-right: 250px;
+            background-color: snow;
+            color: skyblue;
+    </style>
+</head>
+<body>
+    
+     <div class="warpper">
+         <h2 class="question" align="center" > do you love me?  </h2>
+         <a href="https://www.facebook.com/vathana.gaming.127?mibextid=LQQJ4d">
+         <div class="btn-ground">
+             <button class="yes-btn">yes</button>
+  </a>
+             <button class="no-btn">no</button>
+         </div>
+
+         <script>
+            const warpper=document.querySelector('.wrapper');
+            const question =document.querySelector('.question');
+            const yes Btn=document.querySelector('.yes-btn');
+            const noBtn=document.querySelector('.no-btn');
+
+            const warpperRect=wrapper.getBoundClientRect();
+            const noBtnRect=noBtn.getBoundingClientRect();
+
+            yesBtn.addEventListener('click',()=>{
+                question.innerHTML='do you love me?';mibex
+            })
+            noBtn.addEventListener('mouseover',()=>{
+                const i=Math.floor(Math.random()*(warpperRect.width-noBtnRect.width))
+                +1;
+                const j=Math.floor(Math.random()*(warpperRect.width.noBtnRect.height))
+                +1;
+
+                noBtn.style.left=i+'px';
+                noBtn.style.top=j+'px';
+            })
+            </script>
+     </div>
+</body>
+</html>
